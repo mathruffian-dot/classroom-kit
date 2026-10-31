@@ -1,0 +1,8 @@
+# Optional local D1 production-mode test: copy to .dev.vars and choose new values.
+# Never commit real values. Production secrets belong in Worker Secrets.
+# TEACHER_PASSWORD="CHOOSE_A_PRIVATE_PASSWORD_AT_LEAST_12_CHARACTERS"
+# SESSION_SECRET="GENERATE_A_RANDOM_SECRET_AT_LEAST_32_CHARACTERS"
+# STUDENT_CODES_ENABLED="true"
+# Optional server-side AI; core lessons do not require it.
+# AI_API_KEY="YOUR_PROVIDER_KEY"
+# AI_MODEL="YOUR_PROVIDER_MODEL_ID"

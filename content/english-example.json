@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "duration": 15,
+  "id": "english-daily-actions",
+  "title": "英語範例：讀懂日常句子",
+  "description": "用選擇與短答練習句子理解。",
+  "subject": "英語",
+  "objectives": [
+    "能辨識簡單句子的主詞與動作"
+  ],
+  "slides": [
+    {
+      "id": "intro",
+      "title": "Read the sentence",
+      "body": "Mia reads a book after school.",
+      "visual": "cards",
+      "source": "本專案原創功能示範。"
+    },
+    {
+      "id": "understand",
+      "title": "What does Mia do?",
+      "body": "根據上一句選擇符合的動作。",
+      "activity": {
+        "id": "reading-choice",
+        "type": "single",
+        "prompt": "What does Mia do after school?",
+        "options": [
+          "She reads a book.",
+          "She swims.",
+          "She cooks dinner."
+        ],
+        "correct": [
+          0
+        ],
+        "explanation": "句子中的 reads a book 表示閱讀一本書。",
+        "aiAllowed": false
+      }
+    },
+    {
+      "id": "write",
+      "title": "Write a new sentence",
+      "body": "以虛構人物寫一句日常活動，不填寫真實個人資料。",
+      "activity": {
+        "id": "sentence-writing",
+        "type": "short",
+        "prompt": "Write one sentence about a fictional student.",
+        "aiAllowed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "duration": 15,
+  "id": "math-order-of-operations",
+  "title": "數學範例：運算順序",
+  "description": "使用共用活動格式練習先乘除後加減。",
+  "subject": "數學",
+  "objectives": [
+    "能依運算順序計算整數式"
+  ],
+  "slides": [
+    {
+      "id": "intro",
+      "title": "同一個算式，先算哪裡？",
+      "body": "觀察 4 × 3 − 5，先說明你會先計算哪一部分。",
+      "visual": "steps",
+      "source": "本專案原創功能示範。"
+    },
+    {
+      "id": "practice",
+      "title": "試著算一算",
+      "body": "依照運算順序選擇結果。",
+      "activity": {
+        "id": "operation-choice",
+        "type": "single",
+        "prompt": "4 × 3 − 5 = ？",
+        "options": [
+          "7",
+          "17",
+          "−7"
+        ],
+        "correct": [
+          0
+        ],
+        "explanation": "先算 4 × 3 = 12，再算 12 − 5 = 7。",
+        "aiAllowed": false
+      }
+    },
+    {
+      "id": "explain",
+      "title": "說明你的方法",
+      "body": "用一句話說明計算順序。",
+      "activity": {
+        "id": "operation-reason",
+        "type": "short",
+        "prompt": "為什麼要先算乘法？",
+        "aiAllowed": false
+      }
+    }
+  ]
+}

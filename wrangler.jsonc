@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "classroom-kit",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"],
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "classroom-kit-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "vars": {
+    "APP_MODE": "d1",
+    "APP_INSTANCE": "default",
+    "ALLOW_PUBLIC_DEMO": "false",
+    "STUDENT_CODES_ENABLED": "false",
+    "POLL_INTERVAL_MS": "10000",
+    "FILE_TOTAL_MB": "100",
+    "AI_BASE_URL": "https://api.openai.com/v1",
+    "AI_DAILY_LIMIT": "20",
+  },
+  "dev": { "ip": "127.0.0.1", "port": 8787 },
+}
